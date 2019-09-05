@@ -1,5 +1,7 @@
 <template>
     <div>
+
+
         <div id="top">
           <span @click="fun()">取消</span><span>登录豆瓣</span>
         </div>
@@ -10,12 +12,14 @@
        <input type="submit" value="登录" id="sub" @click="fun2()">
        <p>使用其他方式登录 & 找回密码</p>
        <div id="bot">
-           <a href="http://localhost:8082/#/register">注册豆瓣账号</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">下载豆瓣App</a>
+           <a href="http://localhost:8080/#/register">注册豆瓣账号</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">下载豆瓣App</a>
        </div>
     </div>
 </template>
 <script>
+
 export default {
+
     methods:{
         fun(){
             this.$router.go(-1);
@@ -33,7 +37,7 @@ export default {
                   console.log(data);
                   if(data.linkid==2){
                       alert("登录成功");
-                      location.href="http://localhost:8082/#/index";
+                      location.href="http://localhost:8080/#/index";
                   }else if(data.linkid==3){
                       alert("登录失败");
                   }

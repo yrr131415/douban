@@ -1,6 +1,6 @@
 <template>
   <div id="app">
- 
+   
     <router-view/>
   </div>
 </template>
@@ -19,4 +19,7 @@ export default {
     html{
       font-size:26.67vw;
     }
+
+   
+
 </style>

@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import $ from 'jquery';
 
+import axios from 'axios';
+Vue.prototype.axios=axios;
+
+require("./mock");//引用mock
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

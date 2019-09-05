@@ -32,7 +32,7 @@ export default {
                 console.log(data);
                 if(data.linkid==1){
                     alert("注册成功");
-                    window.location.href="http://localhost:8082/#/login";
+                    window.location.href="http://localhost:8080/#/login";
                 }else if(data.linkid==0){
                     alert("注册失败");
                  }

@@ -7,11 +7,18 @@ import boardcast from '../pages/boardcast';
 import group from '../pages/group';
 import index from '../pages/index';
 import register from '../pages/register';
-import login from '../pages/login'
+import login from '../pages/login';
+import change from '../pages/change';
+import detail from '../pages/detail';
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/detail',
+      name: 'detail',
+      component: detail
+    },
     {
       path: '/movie',
       name: 'movie',
@@ -46,6 +53,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: login
-    }
+    },
+    {
+      path: '/change',
+      name: 'change',
+      component: change
+    }    
   ]
 })

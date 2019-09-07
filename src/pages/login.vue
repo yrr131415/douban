@@ -29,20 +29,20 @@ export default {
             var email=$("input").eq(0).val();
             var pwd=$("input").eq(1).val();
             console.log(email+","+pwd);
-            $.ajax({
-                url:"http://localhost:3000/login",
-                type:"post",
-                data:{email,pwd},
-                success(data){
-                  console.log(data);
-                  if(data.linkid==2){
-                      alert("登录成功");
+            // $.ajax({
+            //     url:"http://localhost:3000/login",
+            //     type:"post",
+            //     data:{email,pwd},
+            //     success(data){
+            //       console.log(data);
+            //       if(data.linkid==2){
+            //           alert("登录成功");
                       location.href="http://localhost:8080/#/index";
-                  }else if(data.linkid==3){
-                      alert("登录失败");
-                  }
-                }
-            })            
+            //       }else if(data.linkid==3){
+            //           alert("登录失败");
+            //       }
+            //     }
+            // })            
         }
     }
 }

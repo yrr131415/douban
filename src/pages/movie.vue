@@ -10,9 +10,14 @@
            <fu :fuprops="arrc"></fu>
          <p><span>发现好电影</span><span>更多</span></p>
        </div>
-       <div id="box">
-          <slider v-for="(v,i) in arr" :key="i" :title="v.title" :href="v.href" :color="v"></slider>
-       </div>
+  
+          <div id="box">          
+               <slider v-for="(v,i) in arr" :key="i" :title="v.title" :href="v.href" :color="v">
+               
+              </slider>           
+          </div>       
+ 
+       
        <p id="liulan">分类浏览</p>
        <broswer></broswer>
        <bottom></bottom>
@@ -49,7 +54,7 @@ export default {
           console.log(ok.data.faxianhaodianying);
           this.arr=ok.data.faxianhaodianying;
           this.arr2=ok.data.movie;
-          console.log(ok.data.movie);
+          console.log(ok.data.movie);      
           console.log(ok.data.movie[0].rating.average);
       })
     },

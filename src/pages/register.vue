@@ -24,20 +24,20 @@ export default {
             var uname=$("input").eq(2).val();
             
             console.log(email+","+uname+","+pwd);
-            $.ajax({
-                url:"http://localhost:3000/register",
-                type:"get",
-                data:{email,uname,pwd},
-                success(data){
-                console.log(data);
-                if(data.linkid==1){
-                    alert("注册成功");
+            // $.ajax({
+            //     url:"http://localhost:3000/register",
+            //     type:"get",
+            //     data:{email,uname,pwd},
+            //     success(data){
+            //     console.log(data);
+            //     if(data.linkid==1){
+            //         alert("注册成功");
                     window.location.href="http://localhost:8080/#/login";
-                }else if(data.linkid==0){
-                    alert("注册失败");
-                 }
-                }
-            }) 
+            //     }else if(data.linkid==0){
+            //         alert("注册失败");
+            //      }
+            //     }
+            // }) 
         }      
     }
 }

@@ -9,13 +9,14 @@ import $ from 'jquery';
 
 import axios from 'axios';
 Vue.prototype.axios=axios;
-
+import {store} from './store/store'
 Vue.use(ElementUI)
 require("./mock");//引用mock
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
+  store:store,
   el: '#app',
   router,
   components: { App },

@@ -1,7 +1,7 @@
 <template>
     <div>
        <div id="top">
-            <a href="#"><img id="img1" src="../../static/img/db.png"></a>
+            <a href="http://localhost:8080/#/index"><img id="img1" src="../../static/img/db.png"></a>
             <router-link to="/movie">电影</router-link>
             <router-link to="/book">图书</router-link>
             <router-link to="/boardcast">广播</router-link>

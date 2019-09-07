@@ -51,7 +51,7 @@ div{
        color:#494949;
        font-weight: normal;
         text-indent: 0.2rem;
-        line-height:0.4rem;
+        line-height:0.3rem;
    }
    #date{
        font-size:0.14rem;
@@ -68,6 +68,7 @@ div{
    }
    #box p{
        margin-left: 0.2rem;
+       line-height:0.22rem;
    }
    #bot{
        display:flex;

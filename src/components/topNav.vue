@@ -2,7 +2,7 @@
     <div>
 
        <div id="top">
-            <a href="#"><img id="img1" src="../../static/img/db.png"></a>
+            <router-link to="/index"><img id="img1" src="../../static/img/db.png"></router-link>
             <router-link to="/movie">电影</router-link>
             <router-link to="/book">图书</router-link>
             <router-link to="/boardcast">广播</router-link>
@@ -10,8 +10,8 @@
             <a href="#"><img id="img2" src="../../static/img/search.png" @click="img()"></a>
        </div>
        <div id="midd">
-           <router-link to='/'>影院热映</router-link>
-           <router-link to='/'>欧美新碟榜</router-link>
+           <router-link to='/movie'>影院热映</router-link>
+           <router-link to='/movie'>欧美新碟榜</router-link>
            <router-link to='/register'>注册账号</router-link>
            <router-link to='/login'>登录豆瓣</router-link>
        </div>

@@ -58,6 +58,9 @@ export default new Router({
       path: '/change',
       name: 'change',
       component: change
+    },{
+      path:"/*",
+      redirect:"/index"
     }    
   ]
 })
